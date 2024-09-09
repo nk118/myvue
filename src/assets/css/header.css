@@ -2,12 +2,13 @@
 header {
     position: relative;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 20px;
     color: white;
     background-size: cover;
     background-position: center;
     overflow: hidden; /* 確保模糊效果不會超出範圍 */
+    text-align: center;
 }
 header::before {
     content: '';
@@ -16,14 +17,51 @@ header::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("../images/background.jpg");
-    
+    background-color: #ebe9b0;
     filter: blur(5px);
     z-index: -1; /* 將背景圖片放在文字後面 */
   }
-.myself{
-    z-index: 1;
-    position: relative;
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.links a{
+    font-size: 15px;
+    color: black;
+    padding: 0 10px;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all ease-in-out 0.3s;
+}
+.links a:hover{
+    color: skyblue;
+}
+.button{
+    display: flex;
+    gap: 14px;
+}
+.button a{
+ width: 100%;
+ border-radius: 50%;
+ background-color: #fff;
+ font-size: 18px;
+ padding: 10px;
+ color: #76d4e3;
+ transition: all ease-in-out 0.3s;
+}
+.button a:hover{
+    background-color: gainsboro;
+}
+nav{
+    padding: 0 80px;
 }
 nav ul{
     display: flex;
@@ -56,44 +94,11 @@ nav ul li a:hover::before {
 nav ul li a:active{
 color: white;
 }
-#works {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+#logo img{
+    width: 48px;
+    height: 48px;
 }
 
-.work-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin: 10px;
-    padding: 15px;
-    width: 300px;
-    text-align: center;
-}
-
-.work-item img {
-    max-width: 100%;
-    height: auto;
-}
-
-.work-item h3 {
-    font-size: 1.5em;
-}
-
-.work-item p {
-    font-size: 1em;
-    color: #666;
-}
-
-.work-item a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #007BFF;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
 #mobile-nav {
     display: none; /* 隱藏導航 */
 }
@@ -101,8 +106,8 @@ color: white;
     position: absolute;
     width: 1.8rem;
     height: 1.3rem;
-    top: 2rem;
-    right: 3rem;
+    top: 0.5rem;
+    right: 1rem;
     display: none; /*預設不顯示*/
     flex-direction: column;
     justify-content: space-between;

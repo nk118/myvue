@@ -1,14 +1,17 @@
 <template>
 <HeaderComponent></HeaderComponent>
+<MyMainComponent></MyMainComponent>
 </template>
 
 <script>
 
 import HeaderComponent from './components/Header.vue';
+import MyMainComponent from './components/mymain.vue';
 export default {
   name: 'App',
   components: {
-    HeaderComponent
+    HeaderComponent,
+    MyMainComponent
   }
 }
 </script>

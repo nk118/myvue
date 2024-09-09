@@ -1,0 +1,23 @@
+.about{
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.about-text{
+    text-align: left;
+    width: 100%;
+    max-width: 50%;
+}
+.skill{
+    padding: 100px 80px;
+    width: 100%;
+    background-color: #fafafa;
+    text-align: center;
+}
+.skill img{
+    width: 100%;
+    max-width: 200px;
+    height: 250px;
+}
