@@ -21,3 +21,72 @@
     max-width: 200px;
     height: 250px;
 }
+ul h4{
+    color: brown;
+    font-weight: 600;
+}
+ul li{
+    font-size: 23px;
+}
+p{
+    font-size: 23px;
+}
+.timeline {
+    position: relative;
+    margin-left: 40px; /* 偏移量，給 timeline 結點留出空間 */
+    padding: 20px 0;
+    border-left: 2px solid #ccc; /* 左側的時間軸線 */
+  }
+  
+  .timeline-item {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    left: -10px; /* 與 timeline 左邊對齊 */
+    top: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #f17815; /* 點的顏色 */
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  
+  .timeline-content {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .highlighted .timeline-content {
+    background-color: #fff3cd; /* 高亮部分的背景顏色 */
+    border-left: 4px solid #ffc107;
+  }
+  
+  .timeline h4 {
+    text-align: left;
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+  }
+  .timeline-content ul li{
+   width: 100%;
+   max-width: 750px;
+   text-align: left;
+   left: 18%;
+   position: relative;
+  }
+  .timeline-content h5{
+    position: relative;
+    right: 2.5%;;    
+  }
+  
+  

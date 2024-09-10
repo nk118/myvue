@@ -3,43 +3,45 @@
     <div class="about">
       <img src="../../src/assets/images/my.png" alt="">
       <div class="about-text">
-        <h1>關於我</h1>
-        <p>我出生於2000年，23歲，家鄉是純樸的嘉義，射手座O型。個性開朗、樂觀、積極向上，喜歡旅遊，因為可以接觸到不同的人事物。目前就讀大學夜間部。 <br>
-        <pre>
-          前端技能：
-          具備三個月的前端工程師經驗
-          熟悉切版流程，具有獨立切版的經驗
-          使用Bootstrap進行網頁切版
-          使用AOS實現網頁滾動動畫
-          掌握JavaScript技術，並使用Angular進行開發
-          熟悉Git及GitHub，使用版本控制管理專案進度與變更
-          </pre>
-        <pre>
-          Python相關技能：
-          熟悉Python程式語言
-          Requests爬蟲技術
-          Pandas進行資料清洗
-          具有從Open Data API取得資料並儲存至資料庫的經驗
-          整合資料庫與ChatGPT模型進行應用功能擴充
-        </pre>
-        <pre>
-          MySQL 基礎技能：
-          能夠建立資料庫（database）和資料表（table）
-          熟悉一些基礎的 SQL 語法（如 SELECT, INSERT, UPDATE, DELETE）
-          
-        </pre>
-        <pre>
-          Linux 基礎技能：
-          熟悉基本操作和常用指令（如 cd, ls, cp, mv, rm 等）
-        </pre>
-        使用Vmware和RealVNC連接樹莓派
-        其他：
-        良好的學習能力及進取心
-        熱愛挑戰自己，不斷學習與成長
+        <h1 style="color: black; font-weight: 600;">關於我</h1>
+        <p style="font-size: 23px;">
+          目前我正在就讀大學夜間部(不影響上班時間)，同時也專注於前端工程師技能的提升，還有Ai物聯網的相關知識，在工作領域中，我可獨立作業承擔責任和有效應對各種挑戰，為團隊和企業創造價值。
+        <ul>
+          <h4>在擔任前端工程師時，使用 Angular 框架開發大型專案</h4>
+          <li>熟悉使用 Angular Router 來實現單頁應用的路由配置，並有效地管理應用中的多個頁面導航。</li>
+          <li>在 Angular 中，通過連接 RESTful API，實現前端與後端的數據交換。主要使用 HttpClient模組進行 GET 和 POST
+            請求，來傳遞和接收資料。熟悉非同步資料處理，並能夠有效地與後端進行溝通，實現前後端的基本功能對接。</li>
+          <li>能夠整合第三方套件及函式庫，提升專案功能，並使用 Git 和 GitHub 進行版本控制，確保專案的開發進度與團隊合作流程的順利進行。</li>
+        </ul>
 
+
+
+
+        <ul>
+          <h4>因對Python也有興趣。我學會了多項新技術，包括：</h4>
+          <li>有使用request爬蟲並用bs4進行解析的經驗
+          </li>
+          <li>使用Selenium爬取網頁上的圖片並將圖片下載到資料夾內
+          </li>
+          <li>儲存資料到mysql使用經驗</li>
+          <li>Chatgpt模型使用經驗，並加入資料庫來擴充gpt功能的經驗</li>
+        </ul>
 
         </p>
+
+
+
+        <h2 style="color: brown; font-weight: 600;">總結</h2>
+        <p> 雖然我的實作專案數量不多，但在學習過程中，我不斷挑戰自己，並成功完成了多個相關的實作練習。
+
+          儘管我的經驗有限，但我具備良好的學習能力和進取心，願意不斷學習和成長。相信我的熱情和努力將會讓我在工程師的職位上有所建樹，並為團隊帶來價值，希望貴公司能給我一次機會，我一定會好好積極認真的為公司帶來最大利益化，謝謝。
+        </p>
+
+
+
+
       </div>
+
     </div>
   </section>
   <div class="skill container-fulid ">
@@ -79,6 +81,48 @@
       </div>
       <div class="col-xl-3" data-aos="fade-left"></div>
     </div>
+  </div>
+  <div class="work container ">
+    <h1 style="padding-top: 3rem; text-align: center;">工作經驗</h1>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>2024/4 - 2024/1 · 1個月</h4>
+          <h5>行銷企劃專員</h5>
+          <ul style="list-style-position: inside;" >
+            <li>陌生開發客戶，並介紹產品的推銷及建議客戶網路行銷的規劃</li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="timeline-item highlighted">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>2023/12 - 2024/2 · 3個月</h4>
+          <h5>前端工程師</h5>
+          <ul style="list-style-position: inside;" >
+            <li>使用 CSS flex/grid 及 Bootstrap 進行網頁切版，RWD 響應式設計</li>
+            <li>使用 Angular 框架開發大型專案，熟悉 Router 和 RESTful API</li>
+            <li>使用 Git 和 GitHub 進行版本控制</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>2023/4 - 2023/10 · 7個月</h4>
+          <h5>外勤工程師</h5>
+          <ul style="list-style-position: inside;" >
+            <li>負責安裝設備及軟體的維修和調整，為客戶提供技術支援。</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
   </div>
 </template>
 <script>
