@@ -1,6 +1,9 @@
 
 header {
-    position: relative;
+
+    position: fixed; /* 固定在視窗上方 */
+    width: 100%; /* 確保 header 佔滿整個寬度 */
+    top: 0;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -8,8 +11,9 @@ header {
     background-size: cover;
     background-position: center;
     overflow: hidden; /* 確保模糊效果不會超出範圍 */
-    text-align: center;
+    z-index: 1000; /* 確保 header 位於最前面 */
 }
+
 header::before {
     content: '';
     position: absolute;
@@ -17,10 +21,16 @@ header::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ebe9b0;
-    filter: blur(5px);
-    z-index: -1; /* 將背景圖片放在文字後面 */
-  }
+    background-color: #2c4161; /* 背景色 */
+    z-index: -1; /* 將背景模糊效果放在文字後面 */
+}
+
+/* 主體內容加上適當的上間距，避免被 header 遮住 */
+main {
+    padding-top: 100px; /* 根據 header 的高度調整 */
+}
+
+
 .menu{
     display: flex;
     justify-content: space-between;
@@ -34,11 +44,10 @@ header::before {
 }
 .links a{
     font-size: 15px;
-    color: black;
+    color: #fff;
     padding: 0 10px;
     list-style: none;
     text-decoration: none;
-    font-weight: 600;
     transition: all ease-in-out 0.3s;
 }
 .links a:hover{
@@ -54,11 +63,12 @@ header::before {
  background-color: #fff;
  font-size: 18px;
  padding: 10px;
- color: #76d4e3;
+ color: #12223a;
  transition: all ease-in-out 0.3s;
 }
 .button a:hover{
-    background-color: gainsboro;
+    background-color: #12223a;
+    color: #fff;
 }
 nav{
     padding: 0 80px;
@@ -98,7 +108,9 @@ color: white;
     width: 48px;
     height: 48px;
 }
-
+#phone-menu{
+    display: none;
+}
 #mobile-nav {
     display: none; /* 隱藏導航 */
 }
@@ -140,7 +152,7 @@ color: white;
 }
 .navbar-links{
     z-index: 10;
-    background: rgba(0,0,0,1);
+    background: skyblue;
     display: none; /* 在漢堡被點擊前不顯示 */
     width: 100%;
     position: fixed;
@@ -148,6 +160,7 @@ color: white;
     bottom: 0;
     top: 0;
     transition: all  ease-out .3s; /* 設置過渡效果 */
+    
 }
 .navbar-links.active {
     transition: all 0.5s ease-in-out; /*滑入過場*/
@@ -189,7 +202,8 @@ color: white;
     font-family: serif;
     font-weight: 600;
     letter-spacing: .3rem;
-
+    list-style: none;
+    
 }
 .menu-item{
     position: relative;
@@ -199,7 +213,7 @@ color: white;
     display: inline-block;
     height: 48px;
     text-decoration: none;
-    color: rgb(255,238,168);
+    color: black;
 }
 .MUfooter {
     position: absolute;
@@ -228,9 +242,8 @@ color: white;
         margin: 2% 0;
     }
     .MUfooter {
-        width: 40%;
-        left: 8%;
-        bottom: 7%;
+        left: 0%;
+        bottom: 20%;
     }
     .banner {
         width: 40%;
@@ -242,6 +255,17 @@ color: white;
 @media screen and (max-width: 600px) {
     #pc-menu{
         display: none;
+    }
+    #phone-menu{
+        text-align: left;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: block;
+    }
+    .phone-logo img{
+        width: 50px;
+        height: auto;
     }
     #mobile-nav {
         display: none; /* 顯示導航 */
@@ -274,6 +298,8 @@ color: white;
     .navbar-links ul{
         flex-direction: column; /*讓連結各自直行排列*/
         width: 100%;
+        left: 0%;
+        padding: 10px;
     }
     .navbar-links ul li{
         width: 100%;

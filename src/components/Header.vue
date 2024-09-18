@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header id="hd">
     <nav id="pc-menu" class="menu">
       <div class="left">
         <div id="logo">
@@ -7,9 +7,9 @@
         </div>
         <div class="links">
           <a href="#">首頁</a>
-          <a href="#">關於我</a>
-          <a href="#">個人技能</a>
-          <a href="#">工作經歷</a>
+          <a href="#about">關於我</a>
+          <a href="#skills">個人技能</a>
+          <a href="#works">工作經歷</a>
           <a href="#">關於作品</a>
         </div>
       </div>
@@ -25,14 +25,18 @@
       <span class="bar-2"></span>
       <span class="bar-3"></span>
     </div>
-
+   <nav id="phone-menu">
+    <div class="phone-logo">
+          <img src="../assets/images/image.png" alt="">
+        </div>
+   </nav>
     <!-- 導航菜單 -->
 
   </header>
   <nav class="navbar-links">
     <ul class="menu-list">
-      <li class="menu-item"><a href="#ABOUT" class="menuLINK">About Me</a></li>
-      <li class="menu-item"><a href="#SKILLS" class="menuLINK">Skills</a></li>
+      <li class="menu-item"><a href="#about" class="menuLINK">About Me</a></li>
+      <li class="menu-item"><a href="#skills" class="menuLINK">Skills</a></li>
       <li class="menu-item"><a href="#PORTFOLIO" class="menuLINK">Portfolio</a></li>
       <li class="menu-item"><a href="#CONTACT" class="menuLINK">Contact</a></li>
 
@@ -56,6 +60,7 @@
 
 <script>
 import 'primeicons/primeicons.css'
+// import mymain from './mymain.vue';
 import { toggleNavbar } from '@/assets/js/header.js';
 
 export default {
@@ -63,6 +68,9 @@ export default {
   props: {
     msg: String
   },
+  // components: {
+  //   mymain
+  // },
   mounted() {
     toggleNavbar(); // 调用外部 JavaScript 函数
   },

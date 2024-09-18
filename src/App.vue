@@ -32,13 +32,22 @@ export default {
     padding: 0;
     font-family: sans-serif;
 }
+@font-face {
+  font-family: 'NOTO';
+  src: url('/src/assets/fonts/NOTO.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 *{
+  font-family: 'NOTO', sans-serif;
   padding: 0;
   margin: 0;
-  list-style: none;
   text-decoration: none;
+  scroll-behavior: smooth;
+
 }
 body{
+  overflow-x: hidden;
   background-color: #fafafa;
 }
 </style>

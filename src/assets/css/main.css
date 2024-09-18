@@ -1,14 +1,42 @@
+
+#about{
+  position: relative;
+  min-height: 100vh; /* 保證至少有視窗高度的大小 */
+  z-index: 1;
+}
+
 .about{
+  position: relative;
     padding: 100px 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 50px;
+    height: 100%;
+}
+#about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../images/e7619db75997c65efa09ba11f0176067.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(10px); /* 設置模糊效果 */
+  z-index: -1; /* 背景層置於文字後方 */
+}
+.about img{
+  position: relative;
+  top: 50px;
 }
 .about-text{
-    text-align: left;
+    text-align: justify;
     width: 100%;
     max-width: 50%;
+   padding-top: 3.5rem;
 }
 .skill{
     padding: 100px 80px;
@@ -22,10 +50,11 @@
     height: 250px;
 }
 ul h4{
-    color: brown;
-    font-weight: 600;
+    white-space: nowrap;
+  
 }
 ul li{
+  text-align: justify;
     font-size: 23px;
 }
 p{
@@ -86,7 +115,65 @@ p{
   }
   .timeline-content h5{
     position: relative;
-    right: 2.5%;;    
-  }
+    right: 2.5%;;
   
+  }
+
+  @media screen and (max-width: 600px) {
+    ul h4{
+      font-size: 20px;
+      white-space: wrap;
+  }
+    h5{
+      padding-top:10px;
+    }
+    ul{
+      list-style: decimal;
+    }
+    ul li{
+      font-weight: 350;
+      font-size: 18px;
+      line-height: 40px;
+    }
+    .about{
+      display: flex;
+      flex-direction: column;
+    }
+    .about img{
+      top: 0;
+      left: 50px;
+    }
+    .about-text{
+      padding: 0 10px;
+      text-align: left;
+      max-width: 100%;
+    }
+    .about-text h1{
+      text-align: center;
+    }
+   .timeline-content ul li{
+    left: 0%;
+   }
+  }
+  @media screen and (max-width:1025px){
+    .about{
+      display: flex;
+      flex-direction: column;
+    }
+    .about-text{
+      padding: 0 10px;
+      text-align: left;
+      max-width: 100%;
+    }
+    .about img{
+      top: 0;
+      left: 30%;
+    }
+    .about-text h1{
+      text-align: center;
+    }
+   .timeline-content ul li{
+    left: 0%;
+   }
+  }
   
